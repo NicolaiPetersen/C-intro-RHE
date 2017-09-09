@@ -1,0 +1,7 @@
+            List<string> cars = new List<string>();
+
+            cars.Add("Volvo");
+            cars.Add(Console.ReadLine());
+            Console.WriteLine(cars[0]);
+
+            Console.ReadLine();
