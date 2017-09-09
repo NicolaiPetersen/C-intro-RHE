@@ -1,0 +1,12 @@
+            List<string> cars = new List<string>();
+
+            cars.Add("Volvo");
+
+            while (true)
+            {
+                cars.Add(Console.ReadLine());
+                Console.WriteLine("Det forrige element er "+cars[cars.Count - 2]);
+
+            }
+
+            Console.ReadLine();
