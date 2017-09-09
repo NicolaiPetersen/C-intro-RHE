@@ -1,0 +1,29 @@
+            Dictionary<string, int> movies = new Dictionary<string, int>(StringComparer.InvariantCultureIgnoreCase);
+
+            movies.Add("Blinkende lygter", 8);
+            movies.Add("Die Hard", 10);
+            movies.Add("Andams æbler", 7);
+            movies.Add("Indiana Jones", 10);
+            movies.Add("Highschool Musical", 1);
+            movies.Add("12 Monkeys", 10);
+            movies.Add("Batman Begins", 5);
+            movies.Add("Ferris Bueller's Day Off", 7);
+            movies.Add("Pixels ", 2);
+            movies.Add("The Breakfast Club", 4);
+            movies.Add("As Good as It Gets", 3);
+
+            while (true)
+            {
+                string input = Console.ReadLine();
+                if (movies.ContainsKey(input))
+                {
+                    Console.WriteLine("Rating for filmen er på " + movies[input]);
+                }
+                else
+                {
+                    Console.WriteLine("Filmen er ikke i databasen");
+                }
+
+
+
+            }
