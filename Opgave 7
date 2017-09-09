@@ -1,0 +1,17 @@
+            string[] sStrings = new string[5];
+            int sIndex=0;
+            int sLength = 0;
+
+            for (int i = 0; i < 5; i++)
+            {
+                string input = Console.ReadLine();
+                sStrings[i] = input;
+                if (sLength < input.Length)
+                {
+                    sIndex = i;
+                    sLength = input.Length;
+                }
+            }
+            Console.WriteLine(sStrings[sIndex]+ " var den største og den havde længden " + sLength);
+
+            Console.ReadLine();
