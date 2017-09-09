@@ -1,0 +1,3 @@
+string sString = "Rønde";
+Console.WriteLine("Byen hedder " + sString + " og den er " + sString.Length + " long");
+Console.ReadLine();
