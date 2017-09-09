@@ -1,0 +1,10 @@
+string goku = "goku";
+string vegeta = "vegeta";
+
+goku = "vegeta";
+vegeta = "goku";
+
+Console.WriteLine("Goku indeholder " + goku);
+Console.WriteLine("Vegeta indeholder " + vegeta);
+
+Console.ReadLine();
