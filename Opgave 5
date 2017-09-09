@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string goku = "goku";
+            string vegeta = "vegeta";
+
+            goku = "vegeta";
+            vegeta = "goku";
+
+            Console.WriteLine("Goku indeholder " + goku);
+            Console.WriteLine("Vegeta indeholder " + vegeta);
+
+            Console.ReadLine();
+
+
+        }
+    }
+}
