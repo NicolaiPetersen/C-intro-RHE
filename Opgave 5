@@ -1,0 +1,36 @@
+            Random random = new Random();
+
+            int a = random.Next(1, 5);
+            int b = random.Next(1, 5);
+
+            //Skriver a og b ud til consollen
+            Console.WriteLine("a er " + a);
+            Console.WriteLine("b er " + b);
+
+            //Dette stykke tjekker forholdet mellem a og b
+            if (a > b)
+            {
+                Console.WriteLine("a er størst");
+            }
+            else if (b > a)
+            {
+                Console.WriteLine("b er størst");
+            }
+            else
+            {
+                Console.WriteLine("a og b er lige store ");
+            }
+
+            //Udskriver success hvis a og b er større end 3
+            if (a > 3 && b > 3)
+            {
+                Console.WriteLine("Succes!");
+            }
+
+            //Udskrive Failure hvis a eller b er 1, men ikke begge 1 
+            if ((a == 1 && b != 1) || (a != 1 && b == 1))
+            {
+                Console.WriteLine("Failure!");
+            }
+
+            Console.ReadLine();
