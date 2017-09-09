@@ -1,0 +1,9 @@
+float f1 = 2.3f;
+float f2 = 4.5f;
+float f3 = 1.6f;
+float produkt = f1 * f2 * f3;
+
+Console.WriteLine("Produktet udskrevet som float: " + produkt);
+Console.WriteLine("Produktet udskrevet som int: " + (int)produkt);
+
+Console.ReadLine();
