@@ -1,0 +1,29 @@
+            Random random = new Random();
+
+            int t1 = random.Next(1, 7); 
+            int t2 = random.Next(1, 7); 
+            int t3 = random.Next(1, 7);
+            int t4 = random.Next(1, 7);
+            int t5 = random.Next(1, 7);
+            int t6 = random.Next(1, 7);
+            int count = 1;
+
+            Console.WriteLine(t1 + " " + t2 + " " + t3 + " " + t4 + " " + t5 + " " + t6);
+
+            while (!((t1 == t2) && (t2 == t3) && (t3 == t4) && (t4 == t5) && (t5 == t6)))
+            {
+                t1 = random.Next(1, 7);
+                t2 = random.Next(1, 7);
+                t3 = random.Next(1, 7);
+                t4 = random.Next(1, 7);
+                t5 = random.Next(1, 7);
+                t6 = random.Next(1, 7);
+
+                Console.WriteLine(t1 + " " + t2 + " " + t3 + " " + t4 + " " + t5 + " " + t6);
+
+                count++;
+            }
+
+            Console.WriteLine("Der blev slået Yatsy med " + count + " slag og det var seks gange "+t1);
+
+            Console.ReadLine();
