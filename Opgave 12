@@ -1,0 +1,23 @@
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Omkredsen af et kvadrat med siden 4 er " +rSquared(4));
+            Console.WriteLine("Arealet af en cirkel med radius 3 er "+rCircleArea(3));
+            Console.WriteLine("Arealet af en trekant med højden 4 og bredde 8 er "+rTraingleArea(4, 8));
+
+            Console.ReadLine();
+        }
+
+        static int rSquared(int s1)
+        {
+            return s1 * 4;
+        }
+
+        static float rCircleArea(int r1)
+        {
+            return (float)(r1 * r1 *  Math.PI);
+        }
+
+        static float rTraingleArea(int h, int w)
+        {
+            return (float)(0.5 * h * w);
+        }
