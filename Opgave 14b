@@ -1,0 +1,56 @@
+       static void Main(string[] args)
+        {
+            Console.WriteLine("Der er blevet udskrevet " + AebleNan(7) + " times");
+            Console.ReadLine();
+        }
+
+        static int AebleNan(int at)
+        {
+            int times = 0;
+            int last=2;
+            int same = 1;
+            bool yes = true;
+            Random random = new Random();
+
+            while (yes)
+            {
+                if (random.Next(0, 2) == 1)
+                {
+
+                    Console.WriteLine("æble");
+                    if (last == 1)
+                    {
+                        same++;
+                    }
+                    else
+                    {
+                        same = 1;
+                    }
+                    last = 1;
+                }
+                else
+                {
+                    Console.WriteLine("Banan");
+                    if (last == 0)
+                    {
+                        same++;
+                    }
+                    else
+                    {
+                        same = 1;
+                    }
+                    last = 0;
+
+                }
+
+                times++;
+                if (same == at)
+                {
+                    yes = false;
+                }
+
+
+            }
+            
+            return times;
+        }
