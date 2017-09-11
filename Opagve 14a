@@ -1,3 +1,11 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Der er blevet udskrevet " + AebleNan() + " times");
+            Console.ReadLine();
+        }
+
+        static int AebleNan()
+        {
             int times = 0;
             bool yes = true;
             Random random = new Random();
@@ -31,3 +39,4 @@
             }
             
             return times;
+        }
