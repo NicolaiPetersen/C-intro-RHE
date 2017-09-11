@@ -1,0 +1,33 @@
+            int times = 0;
+            bool yes = true;
+            Random random = new Random();
+
+            List<string> strings = new List<string>();
+
+            strings.Add("");
+            strings.Add("");
+
+            while (yes)
+            {
+                if (random.Next(0, 2) == 1)
+                {
+                    Console.WriteLine("æble");
+                    strings.Add("æble");
+                }
+                else
+                {
+                    Console.WriteLine("Banan");
+                    strings.Add("Banan");
+                }
+
+                times++;
+                if ((strings[times - 1]== strings[times] && strings[times] == strings[times + 1]))
+                {
+                    yes = false;
+
+                }
+
+
+            }
+            
+            return times;
